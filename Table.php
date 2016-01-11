@@ -334,7 +334,7 @@ class Table
             //}
 
             if (!is_null($value)) {
-                $html[] = $key . '="' . e($value) . '"';
+                $html[] = $key . '="' . htmlentities($value, ENT_QUOTES, 'UTF-8', false) . '"';
             }
         }
 
